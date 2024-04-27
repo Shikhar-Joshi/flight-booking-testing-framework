@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "cypress": "^13.8.1"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:edge": "cypress run --browser edge --spec",
+    "cy:edgeHead": "cypress run --headed --browser edge --spec",
+    "cy:chrome": "cypress run --browser chrome --spec",
+    "cy:chromeHead": "cypress run --headed --browser chrome --spec"
+  }
+}
