@@ -2,12 +2,12 @@ class SelectFlights {
 
     elements = {
         EmiratesFirstClassDeparture: () => cy.get('#input_50_0_1').first(),
-        EmiratesFirstClassReturn: () => cy.get('#input_50_0_1').eq(1),
+        EmiratesFirstClassReturn: () => cy.get('#input_50_0_1').last(),
 
         continueBtn: () => cy.get('#reserveFlights')
     }
 
-    selectEmiratesFirstClassDeparture() {
+    selectFromAvailableFlights() {
         this.elements.EmiratesFirstClassDeparture().click();
         this.elements.EmiratesFirstClassReturn().click();
 

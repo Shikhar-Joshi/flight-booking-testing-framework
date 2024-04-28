@@ -18,7 +18,7 @@ class FlightDetailsPage {
         
         selectAirline: () => cy.get('select[name="airline"]'),
 
-        continueBtn: () => cy.get('#*[id="findFlights"]')
+        continueBtn: () => cy.get('#findFlights')
     }
 
     enterFlightDetails() {
