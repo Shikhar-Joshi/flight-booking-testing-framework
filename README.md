@@ -29,7 +29,19 @@ Run npm install to install project dependencies.
 Customize the configuration files (e.g., cypress.json, tsconfig.json) as needed.
 ### 3. Usage:
 Write your test scenarios using the POM classes.
-Execute tests using npx cypress open or npx cypress run.
+Execute tests using
+```bash
+npx cypress open 
+```
+or 
+```bash
+npx cypress run
+```
+Additionally you could use my custom scripts to execute the tests. Check out '[package.json](https://github.com/Shikhar-Joshi/flight-booking-testing-framework/blob/main/package.json)' file for more info.
+An example to execute test using my scripts
+```bash
+npm run cy:edgeHead "PageObjectTest.cy.js"
+```
 
 ## Contributions
 Contributions are welcome! If you’d like to enhance this framework or add new features, feel free to submit pull requests or report issues.
