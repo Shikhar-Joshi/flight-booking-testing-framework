@@ -1,6 +1,8 @@
 class FlightDetailsPage {
 
     elements = {
+        flightDetailsPageTitle: () => cy.get('li#register-confirm').find('h1'),
+
         selectRoundTrip: () => cy.get('input[value="roundtrip"]').click(),
         selectOneTrip: () => cy.get('input[value="oneway"]').click(),
 
@@ -21,6 +23,11 @@ class FlightDetailsPage {
         continueBtn: () => cy.get('#findFlights')
     }
 
+    checkPageTitle() {
+        this.elements.flightDetailsPageTitle().
+            should('have.text', 'Registration Confirmation Page');
+    }
+
     enterFlightDetails() {
 
         this.elements.selectRoundTrip();
@@ -39,6 +46,9 @@ class FlightDetailsPage {
         this.elements.selectEconomyClass();
 
         this.elements.selectAirline().select('Unified Airlines');
+    }
+
+    clickContinueBtn() {
 
         this.elements.continueBtn().click();
     }

@@ -42,7 +42,10 @@ class UserRegistrationPage {
         this.elements.userName().type('ram23');        
         this.elements.password().type('passram');
         this.elements.confirmPassword().type('passram');
-        
+    }
+
+    clickSubmitBtn() {
+
         this.elements.submitBtn().click();
     }
 }
