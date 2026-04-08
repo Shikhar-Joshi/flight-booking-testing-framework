@@ -16,6 +16,8 @@ Test execution results are captured using Mochawesome, generating detailed and v
 The framework records video during test runs, aiding in debugging and documentation.
 Video evidence helps identify issues and provides context for failed tests. After test execution a folder 'videos' will be created automatically which will hold video of test execution.
 
+**Note**: Use `npx cypress run` to generate video and report.
+
 ## Target Audience
 This project is ideal for beginners who want to learn how to structure a Cypress project using the POM pattern. Whether you’re new to Cypress or looking to reinforce your skills, this framework provides practical examples and best practices.
 
@@ -36,8 +38,8 @@ or
 ```bash
 npx cypress run
 ```
-Additionally you could use my custom scripts to execute the tests. Check out '[package.json](https://github.com/Shikhar-Joshi/flight-booking-testing-framework/blob/main/package.json)' file for more info.
-An example to execute test using my custom scripts
+To make cross-browser testing and test execution more efficient, I have mapped several custom commands in '[package.json](https://github.com/Shikhar-Joshi/flight-booking-testing-framework/blob/main/package.json)' file.
+As an example, use the following command to run the suite on a specific browser:
 ```bash
 npm run cy:edgeHead "cypress/e2e/PageObjectTest.cy.js"
 ```
